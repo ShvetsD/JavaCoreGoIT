@@ -42,11 +42,21 @@ public class Task1 {
         return min;
     }
 
+    public static long mult(int[] array) {      //Посмотри пожалуйста ошибку в коде, так как результат с минусом
+        long multip = 1;
+        for (int mlt : array) {
+            multip *= mlt;
+        }
+
+        return multip;
+    }
+
     public static void main(String[] args) {
         int[] array = {156, 486, 4678, 546, 646, 188, 674, 133, 987, 434};
         System.out.println(Sum(array));
         System.out.println(Modulus(array));
         System.out.println(maxElement(array));
-        System.out.println(minElement(array));;
+        System.out.println(minElement(array));
+        System.out.println(mult(array));
     }
 }
