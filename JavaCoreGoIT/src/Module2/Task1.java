@@ -34,18 +34,18 @@ public class Task1 {
 
     public static int minElement(int[] array) {
         int min = array[0];
-        for (int minimum : array) {
-            if (min > minimum) {
-                min = minimum;
+        for (int index : array) {
+            if (min > index) {
+                min =index;
             }
         }
         return min;
     }
 
-    public static long mult(int[] array) {      //Посмотри пожалуйста ошибку в коде, так как результат с минусом
-        long multip = 1;
-        for (int mlt : array) {
-            multip *= mlt;
+    public static double mult(int[] array) {
+        double multip = 1;
+        for (int element : array) {
+            multip *= element;
         }
 
         return multip;
