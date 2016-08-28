@@ -36,7 +36,7 @@ public class Task1 {
         int min = array[0];
         for (int index : array) {
             if (min > index) {
-                min =index;
+                min = index;
             }
         }
         return min;
@@ -51,12 +51,25 @@ public class Task1 {
         return multip;
     }
 
+    public static int maxPositive(int[] array) {
+        int max = array[0];
+        for (int item : array) {
+            if (max < item && max > 0) {
+                max = item;
+            }
+        }
+        return max;
+
+
+    }
+
     public static void main(String[] args) {
-        int[] array = {156, 486, 4678, 546, 646, 188, 674, 133, 987, 434};
+        int[] array = {156, 486, 4678, 546, 646, 188, 674, 133, 987, 434, -1456, -546, -78, -546};
         System.out.println(Sum(array));
         System.out.println(Modulus(array));
         System.out.println(maxElement(array));
         System.out.println(minElement(array));
         System.out.println(mult(array));
+        System.out.println(maxPositive(array));
     }
 }
