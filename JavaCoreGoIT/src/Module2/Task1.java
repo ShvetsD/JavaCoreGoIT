@@ -3,6 +3,8 @@ package Module2;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 
+import static Module2.Task1.secondLargest;
+
 public class Task1 {
     public static int Sum(int[] array) {
         int sum = 0;
@@ -59,8 +61,21 @@ public class Task1 {
             }
         }
         return max;
+    }
 
+    public static int secondLargest(int[] array) {
+        int max0 = 0;
+        int max1 = 0;
+        for (int item : array) {
+            if (max0 < item) {
+                max0 = item;
+            }
+            if (max1 < item && item < max0) {
+                max1 = item;
+            }
+        }
 
+        return max1;
     }
 
     public static void main(String[] args) {
@@ -71,5 +86,6 @@ public class Task1 {
         System.out.println(minElement(array));
         System.out.println(mult(array));
         System.out.println(maxPositive(array));
+        System.out.println(secondLargest(array));
     }
 }
