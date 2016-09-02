@@ -77,7 +77,6 @@ public class Task1 {
 
         return max1;
     }
-
     public static void main(String[] args) {
         int[] array = {156, 486, 4678, 546, 646, 188, 674, 133, 987, 434, -1456, -546, -78, -546};
         System.out.println(Sum(array));
@@ -87,5 +86,8 @@ public class Task1 {
         System.out.println(mult(array));
         System.out.println(maxPositive(array));
         System.out.println(secondLargest(array));
+
+
     }
+
 }
