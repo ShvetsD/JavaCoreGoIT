@@ -15,13 +15,15 @@ public class Task2 {
             String ownerName = ownerNames[i];
             double balance = balances[i];
 
-        double withdrawal = 100;
+        double withdrawal = 240;
         double a = 0.05;
         double comission = withdrawal * a;
         double balanceAfter = withdrawBalance(balance, withdrawal, comission);
         if (balanceAfter >= 0) {
             System.out.println(ownerName + " " + withdrawal + " " + balanceAfter);
-        }
+        }             else
+            System.out.println("NO");
+
     }
 }
 
